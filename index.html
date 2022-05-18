@@ -12,7 +12,7 @@
 
         <br>
 
-        <H2><font color="green">#################################### </font></H2>
+        <H2><font color="green">####################################</font></H2>
        
         <H1><font color="red">Hello World.</font></H1>
 
@@ -20,13 +20,18 @@
 
         <div id="ShowData"></div>
 
-        <H2><font color="green">################ END ################ </font></H2>
+        <font color="orange">
+            <H1 id="ShowResult"></H1>
+        </font>
+
+        <H2><font color="green">################ END ################</font></H2>
 
     </center>        
 
     <script>
 
             var ShowText = "";
+            var Sum = 0;
 
             for(var i = 1 ; i <= 10 ; i++)
             {
@@ -38,9 +43,12 @@
                 ShowText += "<br>";
                 ShowText += "</H1>";
 
+                Sum += i;
+
             }
 
             document.getElementById('ShowData').innerHTML = ShowText;
+            document.getElementById('ShowResult').innerHTML = Sum;
 
     </script>
     
