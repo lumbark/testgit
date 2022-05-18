@@ -10,11 +10,33 @@
 
     <center>
         
-    <H1><font color="red">Hello World.</font></H1>
+        <H1><font color="red">Hello World.</font></H1>
 
-    <H2><font color="green">Welcome to my World.</font></H2>
+        <H2><font color="green">Welcome to my World.</font></H2>
+
+        <div id="ShowData"></div>
 
     </center>
+
+    <script>
+
+            var ShowText = "";
+
+            for(var i = 1 ; i <= 10 ; i++)
+            {
+
+                ShowText += "<H1>";
+                ShowText += "<font color=blue>";
+                ShowText += ">>> " + i + " <<<";
+                ShowText += "</font>";
+                ShowText += "<br>";
+                ShowText += "</H1>";
+
+            }
+
+            document.getElementById('ShowData').innerHTML = ShowText;
+
+    </script>
     
 </body>
 
